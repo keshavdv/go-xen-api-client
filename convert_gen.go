@@ -1920,6 +1920,7 @@ func convertPBDRecordToGo(context string, input interface{}) (record PBDRecord, 
 }
 
 func convertPBDRecordToXen(context string, record PBDRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -3114,6 +3115,7 @@ func convertVBDRecordToGo(context string, input interface{}) (record VBDRecord, 
 }
 
 func convertVBDRecordToXen(context string, record VBDRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -3546,6 +3548,7 @@ func convertVDIRecordToGo(context string, input interface{}) (record VDIRecord, 
 }
 
 func convertVDIRecordToXen(context string, record VDIRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -4140,6 +4143,7 @@ func convertVIFRecordToGo(context string, input interface{}) (record VIFRecord, 
 }
 
 func convertVIFRecordToXen(context string, record VIFRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -4973,6 +4977,7 @@ func convertVMRecordToGo(context string, input interface{}) (record VMRecord, er
 }
 
 func convertVMRecordToXen(context string, record VMRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -5479,6 +5484,7 @@ func convertVMPPRecordToGo(context string, input interface{}) (record VMPPRecord
 }
 
 func convertVMPPRecordToXen(context string, record VMPPRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -5646,6 +5652,7 @@ func convertVMApplianceRecordToGo(context string, input interface{}) (record VMA
 }
 
 func convertVMApplianceRecordToXen(context string, record VMApplianceRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -5993,6 +6000,7 @@ func convertVTPMRecordToGo(context string, input interface{}) (record VTPMRecord
 }
 
 func convertVTPMRecordToXen(context string, record VTPMRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -6203,6 +6211,7 @@ func convertConsoleRecordToGo(context string, input interface{}) (record Console
 }
 
 func convertConsoleRecordToXen(context string, record ConsoleRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -8778,6 +8787,7 @@ func convertNetworkRecordToGo(context string, input interface{}) (record Network
 }
 
 func convertNetworkRecordToXen(context string, record NetworkRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -9344,6 +9354,7 @@ func convertSecretRecordToGo(context string, input interface{}) (record SecretRe
 }
 
 func convertSecretRecordToXen(context string, record SecretRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -9603,6 +9614,7 @@ func convertSubjectRecordToGo(context string, input interface{}) (record Subject
 }
 
 func convertSubjectRecordToXen(context string, record SubjectRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
@@ -9928,6 +9940,7 @@ func convertUserRecordToGo(context string, input interface{}) (record UserRecord
 }
 
 func convertUserRecordToXen(context string, record UserRecord) (rpcStruct xmlrpc.Struct, err error) {
+  rpcStruct = make(xmlrpc.Struct)
   rpcStruct["uuid"], err = convertStringToXen(fmt.Sprintf("%s.%s", context, "uuid"), record.UUID)
   if err != nil {
 		return
